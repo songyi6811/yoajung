@@ -1,0 +1,503 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-Bold.eot');
+    src: url('font/프리텐다드체/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-Bold.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-Black.eot');
+    src: url('font/프리텐다드체/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-Black.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-ExtraLight.eot');
+    src: url('font/프리텐다드체/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-Medium.eot');
+    src: url('font/프리텐다드체/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-Medium.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-Light.eot');
+    src: url('font/프리텐다드체/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-Light.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-Regular.eot');
+    src: url('font/프리텐다드체/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-Regular.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-SemiBold.eot');
+    src: url('font/프리텐다드체/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-SemiBold.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드체/Pretendard-Thin.eot');
+    src: url('font/프리텐다드체/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/프리텐다드체/Pretendard-Thin.woff2') format('woff2'),
+        url('font/프리텐다드체/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cafe24 Ssurround';
+    src: url('font/Cafe24Ssurround.eot');
+    src: url('font/Cafe24Ssurround.eot?#iefix') format('embedded-opentype'),
+        url('font/Cafe24Ssurround.woff2') format('woff2'),
+        url('font/Cafe24Ssurround.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cafe24 Ssurround';
+    src: url('font/Cafe24Ssurround.eot');
+    src: url('font/Cafe24Ssurround.eot?#iefix') format('embedded-opentype'),
+        url('font/Cafe24Ssurround.woff2') format('woff2'),
+        url('font/Cafe24Ssurround.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'Pretendard';
+}
+header{
+    height: 100px;
+    margin-top: 15px;
+}
+header .inner{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+header .inner h1{
+    height: 70px;
+}
+header .inner h1 img{
+    height: 100%; 
+}
+header .inner .menu{
+    height: 100%;
+    line-height: 100px;
+    display: flex;
+}
+header .inner .menu .text-menu{
+    margin-left: 100px;
+}
+header .inner .menu .text-menu ul{
+    width: 670px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 19px;
+    font-weight: bold;
+}
+header .inner .menu .icon-menu{
+   margin-left: 100px;
+   margin-top: 10px;
+}
+header .inner .menu .icon-menu a{
+    margin-right: 20px;
+}
+header .inner .menu .icon-menu a:nth-child(3){
+    margin-right: 0;
+}
+header .inner .menu .icon-menu a img{
+    width: 35px;
+    height: 35px;
+}
+
+
+.main_visual{
+    height: 728px;
+}
+.main_visual img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section01{
+    position: relative;
+}
+.section01 .inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.section01 .section01_title{
+    width: 1280px;
+    margin: 150px auto 0;
+    display: flex;
+}
+.section01 .section01_title h2{
+    font-size: 40px;
+    font-family: 'Cafe24 Ssurround';
+    margin-left: 12px;
+}
+.section01 .section01_title img{
+    width: 37px;
+    height: 43px;
+}
+.section01>img{
+    width: 100%;  
+}
+.section01 .inner .text{
+    /* width: 100%; */
+    text-align: center;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+}
+.section01 .inner .text p:nth-child(2){
+    font-weight: bold;
+}
+
+
+.section02 .inner_head{
+    width: 1280px;
+    margin: 150px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.section02 .inner_head .sectio02_title{
+    width: 1040px;
+    display: flex;
+}
+.section02 .inner_head .sectio02_title img{
+    width: 37px;
+    height: 43px;
+}
+.section02 .inner_head .sectio02_title h2{
+    font-size: 40px;
+    font-family: 'Cafe24 Ssurround';
+    margin-left: 12px;
+}
+.section02 .inner_head .sub{
+    display: flex;
+    gap: 30px;
+}
+.section02 .inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.section02 .inner .item_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    /* padding-bottom: 200px; */
+}
+.section02 .inner .item_wrap .item{
+    width: 299px;
+    /* height: 330px; */
+    /* padding-bottom: 200px; */
+}
+.section02 .inner .item_wrap .item img{
+    border-radius: 149.5px 149.5px 0 0;
+    margin-bottom: 30px;
+}
+.section02 .inner .item_wrap .item p{
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.section03{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.section03 .box_left{
+    background-color: #eb6ca0;
+    width: 624px;
+    height: 470px;
+    position: relative;
+}
+.section03 .box_left .text{
+    /* position: absolute;
+    left: 360px;
+    top: 50px; */
+    color: white;
+}
+.section03 .box_left .text img{
+    width: 37px;
+    height: 44px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 50px;
+    left: 536px;
+}
+.section03 .box_left .text h2{
+    font-size: 40px;
+    font-family: 'Cafe24 Ssurround';
+    position: absolute;
+    top: 124px;
+    left: 340px;
+}
+.section03 .box_left .text p:nth-last-of-type(1){
+    font-size: 22px;
+    position: absolute;
+    top: 212px;
+    left: 345px;
+}
+.section03 .box_left .text p:nth-last-of-type(2){
+    font-size: 22px;
+    position: absolute;
+    top: 186px;
+    left: 357px;
+}
+.section03 .box_center{
+    position: relative;
+}
+.section03 .box_center .text h3{
+    font-size: 35px;
+    font-family: 'Cafe24 Ssurround';
+    color: #f73c5a;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+}
+.section03 .box_center .text .big_text{
+    font-size: 28px;
+    position: absolute;
+    left: 80px;
+    top: 130px;
+}
+.section03 .box_center .text .big_text p:nth-of-type(2){
+    font-weight: bold;
+}
+.section03 .box_center .text .big_text p:nth-of-type(3){
+    font-weight: bold;
+}
+.section03 .box_center .text .small_text{
+    font-size: 18px;
+    color: #626262;
+    position: absolute;
+    left: 80px;
+    top: 262px;
+}
+.section03 .box_center .button{
+    background-color: black;
+    color: white;
+    width: 162px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 80px;
+    top: 358px;
+}
+.section03 .box_right{
+    background-color: #ffcbcb;
+    width: 638px;
+    height: 470px;
+    position: relative;
+}
+.section03 .box_right .text01 h3{
+    font-size: 35px;
+    font-family: 'Cafe24 Ssurround';
+    color: #f73c5a;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.section03 .box_right .text02 h3{
+    font-size: 35px;
+    font-family: 'Cafe24 Ssurround';
+    color: #f73c5a;
+    position: absolute;
+    top: 258px;
+    left: 50px;
+}
+.section03 .box_right .text01 .small{
+    font-size: 22px;
+    position: absolute;
+    left: 50px;
+    top: 113px;
+}
+.section03 .box_right .text01 .small p:nth-of-type(2){
+    font-weight: bold;
+}
+.section03 .box_right .text01 .small p:nth-of-type(3){
+    font-weight: bold;
+}
+.section03 .box_right .text02 .small{
+    font-size: 22px;
+    position: absolute;
+    left: 50px;
+    top: 320px;
+}
+.section03 .box_right .text02 .small p:nth-of-type(2){
+    font-weight: bold;
+}
+.section03 .box_right .text02 .small p:nth-of-type(3){
+    font-weight: bold;
+}
+
+.section04 .inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.section04 .inner .inner_head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.section04 .inner .inner_head .sectio04_title{
+    display: flex;
+}
+.section04 .inner .inner_head .sectio04_title img{
+    width: 37px;
+    height: 43px;
+}
+.section04 .sectio04_title h2{
+    font-size: 40px;
+    font-family: 'Cafe24 Ssurround';
+    margin-left: 12px;
+}
+.section04 .inner .inner_head .id{
+    width: 280px;
+    height: 50px;
+    background-color: #eb6ca0;
+    border-radius: 30px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    /* font-family: 'Cafe24 Ssurround'; */
+}
+.section04 .inner .item_wrap01{
+    display: flex;
+    gap: 29px;
+}
+.section04 .inner .item_wrap01 .item{
+    position: relative;
+}
+.section04 .inner .item_wrap01 .item img{
+    width: 233px;
+    height: 233px;
+    border-radius: 10px;
+}
+.section04 .item_wrap01 .item .insta img{
+    width: 40px;
+    height: 40px;
+    position: absolute; 
+    top: 10px;
+    left: 185px;
+}
+.section04 .inner .item_wrap02{
+    display: flex;
+    gap: 29px;
+    margin-top: 29px;
+}
+.section04 .inner .item_wrap02 .item{
+    position: relative;
+}
+.section04 .inner .item_wrap02 .item img{
+    width: 233px;
+    height: 233px;
+    border-radius: 10px;
+}
+.section04 .item_wrap02 .item .insta img{
+    width: 40px;
+    height: 40px;
+    position: absolute; 
+    top: 10px;
+    left: 185px;
+}
+
+
+footer{
+    height: 502px;
+    background: url(../img/footer.jpg);
+    margin-top: 200px;
+}
+footer .inner{
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+footer .inner img{
+    
+}
+footer .inner .text{
+    display: flex;
+    gap: 250px;
+    font-size: 18px;
+    color: white;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+footer .inner .text .left p{
+    margin-bottom: 20px;
+}
+footer .inner .text .right p{
+    margin-bottom: 20px;
+}
